@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Smart Traffic Management | NH-44 Flow</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="glow-bg"></div>
+
+    <div class="container">
+        <!-- HEADER LINK -->
+        <div style="display:flex; justify-content: flex-end; margin-bottom: 20px;">
+            <a href="dashboard.html" class="sys-btn"><i class="fa-solid fa-server"></i> Launch NH-44 Control Tower</a>
+        </div>
+
+        <!-- SECTION 1: HOW IT WORKS -->
+        <section class="how-it-works">
+            <div class="section-header">
+                <span class="badge"><i class="fa-solid fa-play"></i> Watch video</span>
+                <h2>How AI Traffic Control works</h2>
+            </div>
+
+            <div class="steps-grid">
+                <!-- Step 1 -->
+                <div class="step-card">
+                    <div class="step-mockup">
+                        <div class="mockup-inner">
+                            <div class="mock-header">
+                                <span style="font-size: 11px; font-weight: 600; color: var(--text-secondary);">Live Token</span>
+                                <i class="fa-solid fa-qrcode" style="color: var(--accent);"></i>
+                            </div>
+                            <h3 style="font-size: 24px; margin-top: 10px; color: var(--text-primary);" id="live-token-disp">TKN-8492</h3>
+                            <p style="font-size: 12px; color: var(--text-secondary); margin-top: 20px; font-weight: 500;">Issued <span style="float: right;">14:00 HRS</span></p>
+                        </div>
+                    </div>
+                    <span class="step-badge">Step 1</span>
+                    <h3>Register for Virtual Queue</h3>
+                    <p>Drivers register at holding yards via SMS to receive a digital time-slot token, eliminating shoulder parking.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-card">
+                    <div class="step-mockup">
+                        <div class="mockup-inner mockup-chart">
+                            <div class="mock-header">
+                                <span style="font-size: 11px; font-weight: 600; color: var(--text-secondary);">Upstream Alerts</span>
+                            </div>
+                            <svg viewBox="0 0 100 40" class="mini-chart">
+                                <path d="M0,30 Q20,20 40,35 T80,15 T100,25" fill="none" stroke="#22c55e" stroke-width="2"/>
+                                <circle cx="80" cy="15" r="3" fill="#22c55e" />
+                            </svg>
+                        </div>
+                    </div>
+                    <span class="step-badge">Step 2</span>
+                    <h3>Upstream Metering</h3>
+                    <p>Alerts stop trucks hundreds of kilometers away before chokepoints hit capacity, preventing systemic jam build-up.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-card">
+                    <div class="step-mockup">
+                        <div class="mockup-inner">
+                            <div class="mock-header">
+                                <span style="font-size: 11px; font-weight: 600; color: var(--text-secondary);">Platooning Status</span>
+                            </div>
+                            <div class="progress-bar-thick">
+                                <div class="progress-fill-thick" style="width: 80%;"></div>
+                            </div>
+                            <p style="font-size: 12px; text-align: right; color: var(--accent); margin-top: 5px; font-weight: 600;">+20% Velocity</p>
+                        </div>
+                    </div>
+                    <span class="step-badge">Step 3</span>
+                    <h3>AI Speed Platooning</h3>
+                    <p>Trucks are grouped by exact weight and engine class so fast trucks are never stuck behind slow haulers.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: DISCOVER -->
+        <section class="discover-section">
+            <div class="discover-header">
+                <h2>See highway flow in real time, clearly.</h2>
+                <p>Our dashboard shows live throughput, upstream staging delays, and active relief platoons so authorities can act on congestion—right away.</p>
+            </div>
+
+            <div class="showcase-grid">
+                <!-- Large Card 1 -->
+                <div class="showcase-card">
+                    <div class="showcase-mockup smart-dashboard">
+                        <div class="smart-dash-inner">
+                            <div style="display:flex; justify-content:space-between; margin-bottom: 15px;">
+                                <i class="fa-solid fa-truck-fast"></i>
+                                <span style="font-size:10px;">Queue Dashboard</span>
+                            </div>
+                            <div style="display:flex; gap: 10px; margin-bottom: 15px;">
+                                <div class="dash-stat">
+                                    <span class="stat-lbl">Active Limit</span>
+                                    <span class="stat-val" id="capacity-txt">5,000</span>
+                                </div>
+                                <div class="dash-stat">
+                                    <span class="stat-lbl">Hold Yards</span>
+                                    <span class="stat-val" id="queue-txt">4.2k</span>
+                                </div>
+                            </div>
+                            <!-- Ring mock -->
+                            <div class="dash-ring"></div>
+                        </div>
+                    </div>
+                    <div class="showcase-text">
+                        <h3>Smart Traffic Dashboard</h3>
+                        <p>See all your choke points in one view—live usage, platooning stats, and medical fast-tracks.</p>
+                    </div>
+                </div>
+
+                <!-- Large Card 2 -->
+                <div class="showcase-card">
+                    <div class="showcase-mockup cashflow-mock">
+                        <div class="cashflow-inner" style="background: transparent; padding: 0;">
+                            <!-- Simple Detailed Breakdown -->
+                            <div style="display:flex; justify-content:space-between; align-items:center; border-bottom: 1px solid #e5e7eb; padding-bottom: 10px; margin-bottom:15px;">
+                                <div style="font-size:14px; font-weight: 600; color:#111827;">Status: <span id="ls-status-tag" style="background: #10b981; color:#fff; padding:2px 8px; border-radius:4px; font-size:11px; margin-left:5px;">SAFE</span></div>
+                                <div style="font-size:10px; color:#6b7280;">Target: NH-44 Zone 3</div>
+                            </div>
+                            <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 15px;">
+                                <div style="display:flex; justify-content:space-between; font-size: 14px; border-bottom: 1px dashed #e2e8f0; padding-bottom: 4px;">
+                                    <span style="color: var(--text-secondary); font-weight: 500;">Live Temperature</span>
+                                    <span id="ls-temp" style="font-weight: 700; color: var(--text-primary);">--°C</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; font-size: 14px; border-bottom: 1px dashed #e2e8f0; padding-bottom: 4px;">
+                                    <span style="color: var(--text-secondary); font-weight: 500;">Wind Velocity</span>
+                                    <span id="ls-wind" style="font-weight: 700; color: var(--text-primary);">-- km/h</span>
+                                </div>
+                                <div style="display:flex; justify-content:space-between; font-size: 14px; padding-bottom: 4px;">
+                                    <span style="color: var(--text-secondary); font-weight: 500;">Landslide Probability</span>
+                                    <span id="ls-sat" style="font-weight: 700; color: var(--text-primary);">--%</span>
+                                </div>
+                            </div>
+                            <div id="ls-action-rec" style="padding: 12px; background: rgba(37, 99, 235, 0.1); border-left: 4px solid var(--accent); font-size: 13px; font-weight: 600; color: var(--text-primary); line-height: 1.5; border-radius: 0 4px 4px 0;">
+                                AI ACTION: Conditions steady. Staggered platooning dispatch permitted.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="showcase-text">
+                        <h3>ML Landslide Predictor</h3>
+                        <p>Constantly analyzes live weather to pause queues and route truckers to safe zones before disaster strikes.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- LIVE ACTION FEED -->
+        <section class="live-feed-section">
+            <div style="background: var(--card-bg); border: 1px solid var(--card-border); border-radius: 16px; overflow: hidden; display: flex; flex-direction: column; box-shadow: 0 4px 20px rgba(0,0,0,0.05);">
+                <div style="padding: 20px 30px; border-bottom: 1px solid var(--card-border); display: flex; justify-content: space-between; align-items: center; background: #f8fafc;">
+                    <h3 style="font-size: 16px; font-weight: 700; color: var(--text-primary);"><i class="fa-solid fa-terminal" style="color: var(--accent); margin-right: 10px;"></i> System Live Action Feed</h3>
+                    <span class="badge" style="margin: 0; padding: 6px 12px; font-size: 11px; background: rgba(37,99,235,0.1); border: 1px solid rgba(37,99,235,0.3); border-radius: 6px; color: var(--accent); font-weight: 700;"><span class="pulse-dot active" style="margin-right: 6px;"></span> Active Monitoring</span>
+                </div>
+                <div id="landing-live-feed" style="height: 250px; overflow-y: auto; padding: 20px 30px; display: flex; flex-direction: column; gap: 12px; background: #ffffff; font-family: monospace;">
+                    <!-- JS Feed Items will be inserted here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: FEATURES GRID -->
+        <section class="features-section">
+            <div class="features-header">
+                <span class="badge" style="font-size:10px;">✦ Features</span>
+                <h2>Designed for safety, built for<br>better transit decisions</h2>
+            </div>
+
+            <div class="features-grid">
+                <div class="feat-card">
+                    <i class="fa-solid fa-server feat-icon"></i>
+                    <h4>Live Weather Sync (API)</h4>
+                    <p>Connect and track all hold yards in the state in one unified view.</p>
+                    <div class="live-status"><span class="pulse-dot"></span><span id="feat-sync">Syncing...</span></div>
+                </div>
+                <div class="feat-card">
+                    <i class="fa-solid fa-truck-medical feat-icon"></i>
+                    <h4>Medical Fast-Track</h4>
+                    <p>Automatic green channels prioritizing oxygen and relief manifests.</p>
+                    <div class="live-status"><span class="pulse-dot"></span><span id="feat-med">Scanning manifests...</span></div>
+                </div>
+                <div class="feat-card">
+                    <i class="fa-solid fa-wrench feat-icon"></i>
+                    <h4>Anti-Starvation Fix</h4>
+                    <p>Priority aging algorithm ensures broken-down trucks get their fair slot upon repair.</p>
+                    <div class="live-status"><span class="pulse-dot"></span><span id="feat-starve">Monitoring breakdowns...</span></div>
+                </div>
+                <div class="feat-card">
+                    <i class="fa-regular fa-file-lines feat-icon"></i>
+                    <h4>Weekly Analytics</h4>
+                    <p>Get a snapshot of exact highway delays and throughput improvements.</p>
+                    <div class="live-status"><span class="pulse-dot"></span><span id="feat-analytics">Calculating improvements...</span></div>
+                </div>
+                <div class="feat-card">
+                    <i class="fa-solid fa-stopwatch feat-icon"></i>
+                    <h4>Upstream Limits</h4>
+                    <p>Set threshold caps and auto-ping tolls 300km away when nearing choke risks.</p>
+                    <div class="live-status"><span class="pulse-dot" id="dot-upstream"></span><span id="feat-upstream">Checking tolls...</span></div>
+                </div>
+                <div class="feat-card">
+                    <i class="fa-solid fa-lock feat-icon"></i>
+                    <h4>Secure & private</h4>
+                    <p>Waybills and transport data is strongly encrypted and compliant.</p>
+                    <div class="live-status"><span class="pulse-dot"></span><span id="feat-secure">Encrypting data...</span></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: COMPARISON -->
+        <section class="comparison-section">
+            <span class="badge" style="font-size:10px; margin-bottom: 20px;">✦ Why AI Flow?</span>
+            <h2>There's a smarter way to<br>manage highway chaos</h2>
+
+            <div class="compare-box">
+                <div class="compare-side old-way">
+                    <h4 style="color: var(--text-secondary); margin-bottom:15px; font-size: 16px; font-weight: 600;">Old Methods</h4>
+                    <ul>
+                        <li><i class="fa-solid fa-xmark"></i> Physical stampedes at choke points</li>
+                        <li><i class="fa-solid fa-xmark"></i> Slow trucks blocking fast traffic</li>
+                        <li><i class="fa-solid fa-xmark"></i> Med-supply stranded for 48 hours</li>
+                        <li><i class="fa-solid fa-xmark"></i> 5000 trucks stuck on unsafe shoulders</li>
+                    </ul>
+                </div>
+                <div class="compare-side new-way">
+                    <h4 style="color:var(--text-primary); margin-bottom:15px; display:flex; align-items:center; gap:8px;">
+                        <i class="fa-solid fa-road-bridge" style="color:var(--accent);"></i> AI Smart Flow
+                    </h4>
+                    <ul>
+                        <li><i class="fa-solid fa-check" style="color:var(--accent);"></i> Staggered WhatsApp digital queuing</li>
+                        <li><i class="fa-solid fa-check" style="color:var(--accent);"></i> +20% velocity via Speed Platooning</li>
+                        <li><i class="fa-solid fa-check" style="color:var(--accent);"></i> Automated zero-wait Medical bypass</li>
+                        <li><i class="fa-solid fa-check" style="color:var(--accent);"></i> Secure holding yards & predictive limits</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- Background glow elements -->
+    <div class="bg-glow blob-1"></div>
+    <div class="bg-glow blob-2"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,6 +1,6 @@
 # Kastra Control Tower | AI Traffic Management (NH-44)
 
-![Kastra Control Interface](preview.png)
+
 
 An **AI-driven Smart Traffic Management Interface & Autonomous Queue Sorter** designed to dynamically regulate throughput, alleviate massive highway chokepoints, and automatically prioritize critical cargo through intelligent real-time diagnostics.
 

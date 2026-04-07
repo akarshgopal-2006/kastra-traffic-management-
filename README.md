@@ -1,5 +1,7 @@
 # Kastra Control Tower | AI Traffic Management (NH-44)
 
+![Kastra Control Interface](preview.png)
+
 An **AI-driven Smart Traffic Management Interface & Autonomous Queue Sorter** designed to dynamically regulate throughput, alleviate massive highway chokepoints, and automatically prioritize critical cargo through intelligent real-time diagnostics.
 
 ## 🚨 Problem Statement
@@ -38,6 +40,15 @@ Kastra is built on a custom **Enterprise-grade Light Mode UI**. Standard `rgba` 
 *   **Frontend**: Vanilla HTML / JS / Custom CSS Physics
 *   **Backend Simulation**: Express.js (Node Backend Gateway) + API Routes
 
+## 🧬 Powered by Advanced AI Tools
+
+This platform was not just conceptually inspired by Machine Learning, but its entire core logic, codebase, and intricate Light Mode geometry was autonomously engineered and accelerated leveraging the following core agentic stacks:
+*   **Google AI Studio**: Empowered the advanced prototyping, model integration, and rigorous testing of the foundational algorithmic framework.
+*   **Google Gemini & Gemini APIs**: The raw intelligence engine processing the mathematical generation protocols and logic structures natively.
+*   **Stich**: Leveraged as a deeply integrated continuous generation pipeline connecting the ecosystem.
+*   **Antigravity**: The core sovereign AI coding agent that directly manipulated the file system, wrote the CSS physics algorithms, and natively architected the dashboard queues. 
+*   **Nanobanana**: The deep operational framework leveraged to iteratively test and orchestrate the full-stack generation.
+
 ## ⚙️ Installation & Usage
 
 1. **Clone the Repository:**
@@ -72,3 +83,22 @@ Kastra is built on a custom **Enterprise-grade Light Mode UI**. Standard `rgba` 
 
 ## 🔍 System Operations Preview
 Watch the Autonomous AI live! Upon accessing `dashboard.html`, head to the **Operations** tab. You'll witness the continuous incoming stream of mixed payloads sorting themselves natively based on the mathematical hierarchy. Look out for the glowing Violet `[AGE-ESCALATED]` badges firing when the Anti-Starvation sweep intercepts an older commercial truck structurally separated from dispatch!
+
+---
+
+## 📸 Media & Platform References
+Explore the core interfaces, demonstrations, and system architecture mockups through the following external asset links:
+* [Platform Asset 1 (Overview)](https://drive.google.com/file/d/1mm1uoiSfXK4ZgQvdlCA8S-L-IyYl05Z_/view?usp=sharing)
+* [Platform Asset 2 (Dashboard Focus)](https://drive.google.com/file/d/1sBMoJFqcKSfmtioIn6nHBDzUr4MTYLSp/view?usp=drive_link)
+* [Platform Asset 3 (System Logic)](https://drive.google.com/file/d/1wJaxdSz0-xgYc1KjHe0FUTAaW45rXdRU/view?usp=drive_link)
+* [Platform Asset 4 (Control Readouts)](https://drive.google.com/file/d/16QunIH_RPSysiwD5-cTvhvxoBXIqsSuU/view?usp=drive_link)
+* [Platform Asset 5 (Routing Interface)](https://drive.google.com/file/d/13GH8owpQo_yTMnjlCmsXBjIvIQHcUWZ9/view?usp=drive_link)
+* [Platform Asset 6 (Queue Analytics)](https://drive.google.com/file/d/1HfWWtcaaaPyyfIhbwGTDFaA3b5JaVP0_/view?usp=drive_link)
+* [Platform Asset 7 (Operational Data)](https://drive.google.com/file/d/1hexhbCcReb0G1AmM_c2yjFjqEkFij-Ev/view?usp=drive_link)
+* [Platform Asset 8 (Architectural Concept)](https://drive.google.com/file/d/1392UNrY38-Qq8YYmiiSJq5q9lkRXJtUh/view?usp=sharing)
+* [Platform Asset 9 (Additional Design Data)](https://drive.google.com/file/d/1gl9iK3hugAqzQJJYPwxekP3Z5mLfZtBh/view?usp=drive_link)
+* [Platform Asset 10 (Simulation Metrics)](https://drive.google.com/file/d/1gDjv1xdHYOarCG1ZDP2VFkzE0bgiMgeO/view?usp=drive_link)
+* [Platform Asset 11 (Operations View)](https://drive.google.com/file/d/1aZIKHdLl3Mv7l0ILDKF_Wm3X5DDBiL5y/view?usp=drive_link)
+* [Platform Asset 12 (Queue Engine Overview)](https://drive.google.com/file/d/132c9zP-snhcNSojorGOcYtgz567FZRPy/view?usp=drive_link)
+* [Platform Asset 13 (Deployment Mockup)](https://drive.google.com/file/d/1ta_MWthSwrfKrxcDVtwUlC1jatrDDwye/view?usp=drive_link)
+* [Platform Asset 14 (Framework Details)](https://drive.google.com/file/d/1rJIPU3IgAYxjs0ZIwRfKoYbYJeFqFyYC/view?usp=drive_link)

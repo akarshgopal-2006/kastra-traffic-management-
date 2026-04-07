@@ -102,3 +102,5 @@ Explore the core interfaces, demonstrations, and system architecture mockups thr
 * [Platform Asset 12 (Queue Engine Overview)](https://drive.google.com/file/d/132c9zP-snhcNSojorGOcYtgz567FZRPy/view?usp=drive_link)
 * [Platform Asset 13 (Deployment Mockup)](https://drive.google.com/file/d/1ta_MWthSwrfKrxcDVtwUlC1jatrDDwye/view?usp=drive_link)
 * [Platform Asset 14 (Framework Details)](https://drive.google.com/file/d/1rJIPU3IgAYxjs0ZIwRfKoYbYJeFqFyYC/view?usp=drive_link)
+* DEMO VIDEO
+* https://drive.google.com/file/d/1Luzw5qZoUjNbzU44eUQISEUCHx1DipJ8/view?usp=drive_link
